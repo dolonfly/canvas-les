@@ -2,7 +2,7 @@ FROM node:slim
 
 # Declaring env
 ENV NODE_ENV development
-ENV PORT 3000
+ENV PORT 80
 
 # Setting up the work directory
 WORKDIR /usr/app
