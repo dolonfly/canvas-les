@@ -39,6 +39,5 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           file: Dockerfile
-          target: dbt-mysql
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/canvas-les:latest
           push: true
