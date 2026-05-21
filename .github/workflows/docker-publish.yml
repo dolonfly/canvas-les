@@ -39,5 +39,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           file: Dockerfile
+          platforms: linux/amd64,linux/arm64   # 可根据需要添加更多架构
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/canvas-les:latest
           push: true
